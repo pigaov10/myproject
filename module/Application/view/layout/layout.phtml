@@ -62,8 +62,46 @@
                 </div>
             </div>
             <!-- End Info Unit -->
+            <div class="row-fluid" >
+                <?php echo $this->content; ?>
 
-            <?php echo $this->content; ?>
+                <!-- INICIO BARRA LATERAL -->
+                <div id="side-section" class="span3">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">filter by</li>
+                        <li class="active"><a href="#"><i class="icon-time"></i> Adicionados Recentemente</a></li>
+                        <li><a href="#"><i class="icon-heart-empty"></i> Mais visitados</a></li>
+                        <li><a href="#"><i class="icon-star-empty"></i> ---</a></li>
+                    </ul>
+
+                    <div class="module-top"><i class="icon-lock"></i> Login</div>
+                    <div class="module">
+                        <form method="post" action="?" data-jkit="[form:validateonly=true]">
+                            <fieldset>
+                                <label class="label-main">Usuário</label>
+                                <input name="miniusername" class="span10" id="miniusername"  type="text" data-jkit="[validate:required=true;min=3;max=10;error=Please enter your username (3-10 characters)]">
+                                <label class="label-main">Senha</label>
+                                <input name="miniusername" class="span10" id="miniusername"  type="text" data-jkit="[validate:required=true;min=3;max=10;error=Please enter your username (3-10 characters)]">
+                                <p><label class="checkbox"><input type="checkbox">remember me</label></p>
+                                <button name="send" type="submit" value="Submit"  class="btn btn-small">Entrar</button>
+                            </fieldset>
+                        </form></div>
+
+                    <div class="module-top"><i class="icon-comments"></i>Últimos comentários</div>
+                    <div class="module">
+                        <ul class="comment-list">
+                            <li class="comment">         
+                                <div class="comment-body">
+                                    <h4 class="comment-heading">titulo <span class="time">4:34am</span></h4>
+                                    <p>comentario</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <!-- FIM DA BARRA LATERAL -->
+            </div>
 
             <footer class="footer">
                 <div class="container">
